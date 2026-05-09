@@ -24,5 +24,5 @@
 - [x] Audit visible roadmap copy in Home.tsx against the PowerPoint text.
 - [x] Remove or replace any added, paraphrased, or invented milestone/benchmark wording.
 - [x] Run a production build after source-only wording edits.
-- [ ] Commit and push the source-only wording update to GitHub for Vercel redeployment.
-- [ ] Verify the production Vercel page displays only PowerPoint-derived roadmap wording.
+- [x] Commit and push the source-only wording update to GitHub for Vercel redeployment.
+- [x] Verify the production Vercel page displays only PowerPoint-derived roadmap wording.
