@@ -253,7 +253,7 @@ const roadmap: RoadmapItem[] = [
     month: "NOVEMBER",
     window: "11/5/2023-12/1/2023",
     title: "BENCHMARK #10 RUBRIC DOUBLE CHECK",
-    category: "21 days left of training",
+    category: "BENCHMARK  #10",
     description: "RUBRIC DOUBLE CHECK 1. Fill out the document DUE: 11/5/2023 2. Email the form to our scoring rep DUE: 11/6/2023 3. Post confirmation that you meet #’s DUE: 12/1/2023",
     due: "DUE 11/5/2023-12/1/2023",
     icon: ClipboardCheck,
