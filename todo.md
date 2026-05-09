@@ -15,5 +15,5 @@
 - [x] Locate the original benchmark wording from the provided PowerPoint document or prior extraction output.
 - [x] Replace invented benchmark copy in the site with wording from the source document.
 - [x] Run the production build after the wording-only correction.
-- [ ] Commit and push the corrected copy to GitHub for Vercel redeployment.
-- [ ] Verify the live Vercel page displays the corrected benchmark wording.
+- [x] Commit and push the corrected copy to GitHub for Vercel redeployment.
+- [x] Verify the live Vercel page displays the corrected benchmark wording.
