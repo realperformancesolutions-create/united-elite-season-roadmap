@@ -26,3 +26,13 @@
 - [x] Run a production build after source-only wording edits.
 - [x] Commit and push the source-only wording update to GitHub for Vercel redeployment.
 - [x] Verify the production Vercel page displays only PowerPoint-derived roadmap wording.
+
+## Benchmark Mapping Correction
+
+- [x] Extract each benchmark slide/card grouping from TIMELINEPRODIGYV3.pptx in order.
+- [x] Create a benchmark-to-text mapping table from the PowerPoint only.
+- [x] Compare the current Home.tsx roadmap data against the PowerPoint mapping.
+- [x] Correct any benchmark text placed under the wrong benchmark.
+- [x] Run a production build after benchmark mapping edits.
+- [ ] Verify the corrected page shows benchmark text under the correct benchmark.
+- [ ] Commit, push, and save a checkpoint for the corrected benchmark mapping.
