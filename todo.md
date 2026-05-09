@@ -17,3 +17,12 @@
 - [x] Run the production build after the wording-only correction.
 - [x] Commit and push the corrected copy to GitHub for Vercel redeployment.
 - [x] Verify the live Vercel page displays the corrected benchmark wording.
+
+## Source-Only Wording Audit
+
+- [x] Re-extract or reconfirm all text from TIMELINEPRODIGYV3.pptx as the sole wording source.
+- [x] Audit visible roadmap copy in Home.tsx against the PowerPoint text.
+- [x] Remove or replace any added, paraphrased, or invented milestone/benchmark wording.
+- [x] Run a production build after source-only wording edits.
+- [ ] Commit and push the source-only wording update to GitHub for Vercel redeployment.
+- [ ] Verify the production Vercel page displays only PowerPoint-derived roadmap wording.

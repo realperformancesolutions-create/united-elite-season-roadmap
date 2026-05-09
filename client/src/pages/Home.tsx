@@ -37,196 +37,217 @@ type RoadmapItem = {
 
 const roadmap: RoadmapItem[] = [
   {
-    month: "May",
-    window: "5/3–5/4",
-    title: "Tryouts",
-    category: "Team Entry",
-    description: "Season launch point for athlete evaluation and first-team direction.",
+    month: "MAY",
+    window: "5/3-5-4",
+    title: "TRYOUTS",
+    category: "TRYOUTS 5/3-5/4",
+    description: "TRYOUTS",
     icon: Flag,
   },
   {
-    month: "May",
-    window: "5/8–5/9",
-    title: "Staff Training",
-    category: "Preparation",
-    description: "Coaching alignment and staff readiness before full team ramp-up.",
+    month: "MAY",
+    window: "5/8-5/9",
+    title: "STAFF TRAINING",
+    category: "MAY",
+    description: "STAFF TRAINING",
     icon: ShieldCheck,
   },
   {
-    month: "May",
+    month: "MAY",
     window: "5/13",
-    title: "Second Tryouts",
-    category: "Team Entry",
-    description: "Additional athlete evaluation window for team-building depth.",
+    title: "2ND TRYOUTS",
+    category: "MAY",
+    description: "2ND TRYOUTS",
     icon: Flag,
   },
   {
-    month: "May",
-    window: "5/24–5/25",
-    title: "Tumbling Seminar",
-    category: "Skill Building",
-    description: "Focused tumbling development before summer camps and team placements.",
+    month: "MAY",
+    window: "5/24-5/25",
+    title: "TUMBLING SEMINAR",
+    category: "MAY",
+    description: "TUMBLING SEMINAR",
     icon: Activity,
   },
   {
-    month: "June",
+    month: "JUNE",
     window: "6/3",
-    title: "Late Tryouts",
-    category: "Team Entry",
-    description: "Final late-entry evaluation opportunity before confirmed placements.",
+    title: "LATE TRYOUTS",
+    category: "2ND TRYOUT 6/3",
+    description: "LATE TRYOUTS",
     icon: Flag,
   },
   {
-    month: "June",
-    window: "6/5–6/7",
-    title: "Tumble Camp",
-    category: "Skill Building",
-    description: "Dedicated tumbling camp to establish summer skill direction.",
+    month: "JUNE",
+    window: "6/5-6/7",
+    title: "TUMBLE CAMP",
+    category: "JUNE",
+    description: "TUMBLE CAMP",
     icon: Activity,
   },
   {
-    month: "June",
-    window: "6/21–6/23 & 6/27–6/29",
-    title: "Level 1–4 Stunt Camp",
-    category: "Stunt Camp",
-    description: "Stunt development blocks for Levels 1–4 with execution and connection focus.",
+    month: "JUNE",
+    window: "6/21-6/23 & 6/27-6/29",
+    title: "LEVEL 1-4 STUNT CAMP",
+    category: "JUNE",
+    description: "LEVEL 1-4 STUNT CAMP",
     icon: ShieldCheck,
   },
   {
-    month: "June",
-    window: "6/24–6/26",
-    title: "Level 5–6 Stunt Camp",
-    category: "Stunt Camp",
-    description: "Advanced stunt progression for Levels 5–6 before final team placements.",
+    month: "JUNE",
+    window: "6/24-6/26",
+    title: "LEVEL 5-6 STUNT CAMP.",
+    category: "JUNE",
+    description: "LEVEL 5-6 STUNT CAMP.",
     icon: ShieldCheck,
   },
   {
-    month: "June",
+    month: "JUNE",
     window: "6/30",
-    title: "Final Team Placements",
-    category: "Team Selection",
-    description: "Placement checkpoint that sets the path for benchmark work and routine development.",
+    title: "FINAL TEAM PLACEMENTS",
+    category: "TEAM SELECTION",
+    description: "FINAL TEAM PLACEMENTS 6/30",
     icon: CheckCircle2,
   },
   {
-    month: "July",
+    month: "JULY",
     window: "7/9",
-    title: "Benchmark #2: Team Drills Outline",
-    category: "Due: 7/9",
-    description:
-      "Teams need to leave with minimum a creative entry 1-2 elements and a creative transtion.",
-    due: "Due: 7/9",
+    title: "BENCHMARK #2 TEAM DRILLS OUTLINE",
+    category: "DUE:",
+    description: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSTION",
+    due: "DUE: 7/9",
     icon: ClipboardCheck,
   },
   {
-    month: "July",
+    month: "JULY",
     window: "7/13",
-    title: "Benchmark #1: Tumbling Skill Selection",
-    category: "Video Due",
-    description: "Tumbling skill selection.",
-    due: "Video due 7/13",
+    title: "BENCHMARK #1 TUMBLING SKILL SELECTION",
+    category: "VIDEO DUE 7/13",
+    description: "TUMBLING SKILL SELECTION",
+    due: "VIDEO DUE 7/13",
     icon: Video,
   },
   {
-    month: "July",
+    month: "JULY",
     window: "7/16",
-    title: "Benchmark #3: Routine Choreo Month",
-    category: "Skill Building / Team Selection",
-    description:
-      "Jumps in max #s. Single toe, double jump sequence and any jump not performed. IE: left hurdler or pike.",
-    due: "Video due: 7/16",
+    title: "BENCHMARK #3 ROUTINE CHOREO MONTH",
+    category: "SKILL BUILDING TEAM SELECTION",
+    description: "JUMPS IN MAX #S SINGLE TOE, DOUBLE JUMP SEQUENCE AND ANY JUMP NOT PERFORMED. IE: LEFT HURDLER OR PIKE",
+    due: "VIDEO DUE:7/16",
     icon: Video,
   },
   {
-    month: "August",
+    month: "AUGUST",
     window: "8/20",
-    title: "Benchmark #4: Stunt Sequence",
-    category: "Element by Element",
-    description:
-      "Creative in 1-2 elements. Mid creative element. Final 1-2 elements & dismount. We have to get it right!",
-    due: "Video due: 8/20",
+    title: "BENCHMARK #4 STUNT SEQUENCE",
+    category: "(ELEMENT BY ELEMENT)",
+    description: "CREATIVE IN 1-2 ELEMENTS MID CREATIVE ELEMENT FINAL 1-2 ELEMENTS & DISMOUNT WE HAVE TO GET IT RIGHT !",
+    due: "VIDEO DUE:8/20",
     icon: ShieldCheck,
   },
   {
-    month: "September",
+    month: "OCTOBER",
     window: "9/24",
-    title: "Benchmark #5: Full Stunt Isolation",
-    category: "Video Due",
-    description: "Full stunt isolation.",
-    due: "Video due: 9/24",
+    title: "BENCHMARK #5 FULL STUNT ISOLATION",
+    category: "VIDEO DUE:9/24",
+    description: "FULL STUNT ISOLATION DANCE CHOREO MONTH",
+    due: "VIDEO DUE:9/24",
     icon: Video,
   },
   {
-    month: "October",
-    window: "10/13–10/15",
-    title: "Benchmarks #6–#7: Pyramid Choreo Month",
-    category: "Pyramid Choreo Month",
-    description: "Pyramid choreo month. 1st half of pramid (full speed). 2nd half of pyramid (full speed).",
-    due: "Video due: 10/13 and 10/15",
+    month: "OCTOBER",
+    window: "10/13",
+    title: "BENCHMARK #6 PYRAMID CHOREO MONTH",
+    category: "VIDEO DUE:",
+    description: "PYRAMID CHOREO MONTH 1 ST HALF OF PRAMID (FULL SPEED)",
+    due: "VIDEO DUE: 10/13",
     icon: Route,
   },
   {
-    month: "October",
-    window: "10/16–10/20",
-    title: "Benchmark #8: Flyer Body Position Check",
-    category: "Collage Due",
-    description:
-      "Flyer flex measurable collage. Boby position collage including: heel stretch, front stretch, bow & arrow, arabesque, scale & needle.",
-    due: "Collage due: 10/16; video due: 10/20",
+    month: "OCTOBER",
+    window: "10/15",
+    title: "BENCHMARK #7 PYRAMID CHOREO MONTH",
+    category: "VIDEO DUE:10/15",
+    description: "2 ND HALF OF PYRAMID (FULL SPEED)",
+    due: "VIDEO DUE:10/15",
+    icon: Route,
+  },
+  {
+    month: "OCTOBER",
+    window: "10/16",
+    title: "BENCHMARK #10 FLYER BODY POSITION CHECK",
+    category: "COLLAGE",
+    description: "FLYER FLEX MEASURABLE COLLAGE BOBY POSITION COLLAGE INCLUDING: HEEL STRETCH, FRONT STRETCH, BOW & ARROW, ARABESQUE, SCALE & NEEDLE",
+    due: "DUE:10/16",
     icon: ClipboardCheck,
   },
   {
-    month: "October",
-    window: "10/23–10/29",
-    title: "Benchmarks #9–#13: Initial Pyramid Concepts",
-    category: "Gym Rehearsal",
-    description:
-      "Initial pyramid concepts. Pyramid isolation. Dance choreo. From this point forward 2 full outs per practice. No exceptions. Full out (minust pyramid/dance).",
-    due: "Video due: 10/23 and 10/29; gym rehearsal 10/29/2023",
+    month: "OCTOBER",
+    window: "10/20",
+    title: "BENCHMARK #8",
+    category: "COLLAGE DUE",
+    description: "# 1. VIDEO OF JUMPS PERFORMED #2 INDIVIAL COLLAGE",
+    due: "COLLAGE DUE 10/20",
+    icon: ClipboardCheck,
+  },
+  {
+    month: "OCTOBER",
+    window: "10/23",
+    title: "BENCHMARK #12 PYRAMID ISOLATION DANCE CHOREO",
+    category: "VIDEO DUE:10/23",
+    description: "PYRAMID ISOLATION DANCE CHOREO",
+    due: "VIDEO DUE:10/23",
     icon: Trophy,
   },
   {
-    month: "November",
-    window: "11/5–12/1",
-    title: "Benchmark #9: USASF Legality Submission",
-    category: "Rubric Double Check",
-    description:
-      "All building (inlcuding lifts). Fill out the document. Email the form to our scoring rep. Post confirmation that you meet #’s.",
-    due: "Due 11/5/2023; email due 11/6/2023; confirmation due 12/1/2023",
+    month: "OCTOBER",
+    window: "10/29",
+    title: "BENCHMARK #9 INITIAL PYRAMID CONCEPTS",
+    category: "Gym rehearsal",
+    description: "INITIAL PYRAMID CONCEPTS FROM THIS POINT FORWARD 2 FULL OUTS PER PRACTICE. NO EXCEPTIONS. FULL OUT (MINUST PYRAMID/DANCE",
+    due: "VIDEO DUE:10/29 10/29/2023",
+    icon: Trophy,
+  },
+  {
+    month: "NOVEMBER",
+    window: "11/5/2023-12/1/2023",
+    title: "BENCHMARK #9 USASF LEGALITY SUBMISSION",
+    category: "RUBRIC DOUBLE CHECK",
+    description: "All building (INLCUDING LIFTS) Fill out the document 2. Email the form to our scoring rep 3. Post confirmation that you meet #’s",
+    due: "DUE 11/5/2023 DUE: 11/5/2023 DUE: 11/6/2023 DUE: 12/1/2023",
     icon: ClipboardCheck,
   },
   {
-    month: "November",
-    window: "11/12",
-    title: "Benchmark #10: Gift of the Season Team Showcase",
-    category: "Full Out",
-    description: "Gift of the Season Team Showcase. Full out. 21 days left of training.",
+    month: "NOVEMBER",
+    window: "11/12/2023",
+    title: "BENCHMARK #11 GIFT OF THE SEASON TEAM SHOWCASE",
+    category: "FULL OUT",
+    description: "GIFT OF THE SEASON TEAM SHOWCASE FULL OUT 21 days left of training #Prodigy elevate",
     due: "11/12/2023",
     icon: Trophy,
   },
   {
-    month: "December",
+    month: "DECEMBER",
     window: "12/2",
-    title: "Benchmark #11: Physical Fitness Test",
-    category: "Video Due Prior to Break",
-    description: "2 Rounds of the warm-up. Stretch system/flyer stretch.",
-    due: "Video due: prior to leaving for break. 12/2",
+    title: "BENCHMARK #11 PHYSICAL FITNESS TEST",
+    category: "VIDEO DUE: PRIOR TO LEAVING FOR BREAK",
+    description: "2 Rounds of the warm-up Stretch system/flyer stretch",
+    due: "VIDEO DUE: PRIOR TO LEAVING FOR BREAK 12/2",
     icon: Activity,
   },
   {
-    month: "December",
-    window: "12/16–12/17",
-    title: "The Prodigy Showdown",
-    category: "Competition",
-    description: "Season performance checkpoint and culminating early-season competition moment.",
+    month: "DECEMBER",
+    window: "12/16 & 12/17",
+    title: "THE PRODIGY SHOW DOWN",
+    category: "DECEMBER",
+    description: "THE PRODIGY SHOW DOWN",
     icon: Trophy,
   },
 ];
 
 const stats = [
-  { label: "Season Span", value: "May–Dec" },
-  { label: "Core Checkpoints", value: "13" },
-  { label: "Primary Focus", value: "Skill → Full Out" },
+  { label: "SEASON ROAD MAP", value: "2023-2024" },
+  { label: "MAY", value: "JUNE" },
+  { label: "NOVEMBER", value: "DECEMBER" },
 ];
 
 const monthSummary = Array.from(new Set(roadmap.map((item) => item.month))).map((month) => ({
@@ -297,15 +318,15 @@ export default function Home() {
               className="h-14 w-14 object-contain drop-shadow-[0_0_18px_rgba(54,150,255,0.55)] transition-transform duration-300 group-hover:scale-105"
             />
             <div>
-              <p className="font-display text-2xl uppercase tracking-[0.18em] text-white">United Elite</p>
-              <p className="text-[0.68rem] uppercase tracking-[0.38em] text-blue-200/80">Season Road Map</p>
+              <p className="font-display text-2xl uppercase tracking-[0.18em] text-white">SEASON ROAD MAP</p>
+              <p className="text-[0.68rem] uppercase tracking-[0.38em] text-blue-200/80">2023-2024</p>
             </div>
           </a>
           <a
             href="#roadmap"
             className="hidden items-center gap-2 border border-blue-300/30 bg-blue-400/10 px-5 py-3 font-heading text-sm uppercase tracking-[0.22em] text-blue-100 shadow-[0_0_26px_rgba(41,145,255,0.18)] backdrop-blur transition hover:border-blue-200/70 hover:bg-blue-300/20 md:flex"
           >
-            Enter Roadmap <ChevronRight className="h-4 w-4" />
+            SEASON ROAD MAP <ChevronRight className="h-4 w-4" />
           </a>
         </header>
 
@@ -318,27 +339,27 @@ export default function Home() {
           >
             <div className="mb-8 inline-flex items-center gap-3 border border-blue-300/25 bg-black/35 px-4 py-2 text-xs uppercase tracking-[0.28em] text-blue-100 backdrop-blur">
               <MapPinned className="h-4 w-4 text-blue-300" />
-              Navigate the 2023–2024 path
+              SEASON ROAD MAP 2023-2024
             </div>
             <h1 className="font-display text-[clamp(4rem,12vw,10.5rem)] uppercase leading-[0.78] tracking-[0.02em] text-white text-shadow-blue">
               Season
               <span className="block text-blue-300">Road Map</span>
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-200/86 sm:text-xl">
-              A competition-night journey through tryouts, camps, benchmarks, choreography, legality checks, full-outs, and showcase moments. Follow the route from the first team entry point to the December showdown.
+              TRYOUTS 5/3-5-4 STAFF TRAINING 5/8-5/9 2ND TRYOUTS 5/13 TUMBLING SEMINAR 5/24-5/25
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#roadmap"
                 className="group inline-flex items-center justify-center gap-3 bg-blue-400 px-6 py-4 font-heading text-sm uppercase tracking-[0.24em] text-black shadow-[0_0_38px_rgba(60,157,255,0.45)] transition hover:bg-blue-200"
               >
-                Start the route <Route className="h-5 w-5 transition group-hover:translate-x-1" />
+                SEASON ROAD MAP <Route className="h-5 w-5 transition group-hover:translate-x-1" />
               </a>
               <a
                 href="#benchmarks"
                 className="inline-flex items-center justify-center gap-3 border border-white/20 bg-white/5 px-6 py-4 font-heading text-sm uppercase tracking-[0.24em] text-white backdrop-blur transition hover:border-blue-200/60 hover:bg-blue-300/10"
               >
-                Benchmark view
+                BENCHMARK #1
               </a>
             </div>
           </motion.div>
@@ -380,13 +401,13 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="mb-20 grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
             <div>
-              <p className="font-heading text-sm uppercase tracking-[0.34em] text-blue-300">Route Checkpoints</p>
+              <p className="font-heading text-sm uppercase tracking-[0.34em] text-blue-300">SEASON ROAD MAP</p>
               <h2 className="mt-4 font-display text-6xl uppercase leading-[0.9] text-white sm:text-7xl">
-                Follow the season line.
+                2023-2024
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-slate-300">
-              Each waypoint keeps the original season order while translating the PowerPoint timeline into a scannable digital experience. Blue markers identify the next major deadline, video due date, or performance checkpoint.
+              MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER
             </p>
           </div>
 
@@ -427,10 +448,10 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
-              <p className="font-heading text-sm uppercase tracking-[0.34em] text-blue-300">Month Command Board</p>
-              <h2 className="mt-4 font-display text-6xl uppercase leading-[0.92] text-white">Where the pressure rises.</h2>
+              <p className="font-heading text-sm uppercase tracking-[0.34em] text-blue-300">SEASON ROAD MAP</p>
+              <h2 className="mt-4 font-display text-6xl uppercase leading-[0.92] text-white">2023-2024</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                The roadmap compresses the season into month zones so athletes and staff can see when the route shifts from selection into choreography, compliance, full-outs, and competition readiness.
+                BENCHMARK #1 BENCHMARK #2 BENCHMARK #3 BENCHMARK #4 BENCHMARK #5 BENCHMARK #6 BENCHMARK #7 BENCHMARK #8 BENCHMARK #9 BENCHMARK #10 BENCHMARK #11 BENCHMARK #12 BENCHMARK #13
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -446,7 +467,7 @@ export default function Home() {
                   <Sparkles className="h-5 w-5 text-blue-300" />
                   <p className="mt-6 font-display text-5xl uppercase text-white">{month.month}</p>
                   <p className="mt-2 font-heading text-sm uppercase tracking-[0.22em] text-slate-300">
-                    {month.count} checkpoint{month.count === 1 ? "" : "s"}
+                    SEASON ROAD MAP
                   </p>
                 </motion.div>
               ))}
@@ -460,12 +481,12 @@ export default function Home() {
           <a href="/" className="flex items-center gap-3" aria-label="United Elite home footer link">
             <img src={logoUrl} alt="United Elite shield logo" className="h-12 w-12 object-contain" />
             <div>
-              <p className="font-heading text-sm uppercase tracking-[0.28em] text-white">United Elite</p>
-              <p className="text-sm text-slate-400">Season Road Map 2023–2024</p>
+              <p className="font-heading text-sm uppercase tracking-[0.28em] text-white">SEASON ROAD MAP</p>
+              <p className="text-sm text-slate-400">2023-2024</p>
             </div>
           </a>
           <p className="max-w-xl text-sm leading-6 text-slate-400">
-            Built as a Vercel-ready static React page with responsive layout, branded assets, animated waypoints, and roadmap content adapted from the provided timeline deck.
+            THE PRODIGY SHOW DOWN 12/16 & 12/17
           </p>
         </div>
       </footer>
@@ -478,7 +499,7 @@ function RoadmapCard({ item, index, Icon }: { item: RoadmapItem; index: number; 
     <div className="roadmap-card group">
       <div className="flex items-start justify-between gap-5">
         <div>
-          <p className="font-heading text-xs uppercase tracking-[0.28em] text-blue-300">{String(index + 1).padStart(2, "0")} / {item.month}</p>
+          <p className="font-heading text-xs uppercase tracking-[0.28em] text-blue-300">{item.month}</p>
           <h3 className="mt-3 font-heading text-2xl uppercase leading-tight text-white sm:text-3xl">{item.title}</h3>
         </div>
         <div className="card-icon">
