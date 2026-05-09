@@ -34,5 +34,5 @@
 - [x] Compare the current Home.tsx roadmap data against the PowerPoint mapping.
 - [x] Correct any benchmark text placed under the wrong benchmark.
 - [x] Run a production build after benchmark mapping edits.
-- [ ] Verify the corrected page shows benchmark text under the correct benchmark.
+- [x] Verify the corrected page shows benchmark text under the correct benchmark.
 - [ ] Commit, push, and save a checkpoint for the corrected benchmark mapping.
