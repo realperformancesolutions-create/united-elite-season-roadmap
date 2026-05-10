@@ -17,7 +17,6 @@ import {
   Video,
 } from "lucide-react";
 
-const logoUrl = "/manus-storage/united-elite-shield_fa4df632.webp";
 const heroRoadUrl =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663270045816/jBDb4VNWMJL62ujU8zZMux/united-elite-hero-road-clean-NYoy6iD2JVmVXbykU4c3aA.webp";
 const roadTextureUrl =
@@ -27,274 +26,239 @@ const waypointOrbUrl =
 
 type RoadmapItem = {
   month: string;
-  window: string;
+  date?: string;
   title: string;
   category: string;
-  description: string;
+  description: string[];
   due?: string;
   icon: typeof Flag;
 };
 
 const roadmap: RoadmapItem[] = [
   {
-    month: "MAY",
-    window: "5/3-5-4",
-    title: "TRYOUTS",
-    category: "TRYOUTS 5/3-5/4",
-    description: "TRYOUTS",
+    month: "JUNE",
+    date: "6/3",
+    title: "LATE TRYOUTS",
+    category: "JUNE",
+    description: ["LATE TRYOUTS 6/3"],
     icon: Flag,
   },
   {
-    month: "MAY",
-    window: "5/8-5/9",
-    title: "STAFF TRAINING",
-    category: "MAY",
-    description: "STAFF TRAINING",
-    icon: ShieldCheck,
-  },
-  {
-    month: "MAY",
-    window: "5/13",
-    title: "2ND TRYOUTS",
-    category: "MAY",
-    description: "2ND TRYOUTS",
-    icon: Flag,
-  },
-  {
-    month: "MAY",
-    window: "5/24-5/25",
-    title: "TUMBLING SEMINAR",
-    category: "MAY",
-    description: "TUMBLING SEMINAR",
+    month: "JUNE",
+    date: "6/5-6/7",
+    title: "TUMBLE CAMP",
+    category: "JUNE",
+    description: ["TUMBLE CAMP 6/5-6/7"],
     icon: Activity,
   },
   {
-    month: "MAY",
-    window: "MAY",
-    title: "WE HAVE TO GET IT RIGHT !",
-    category: "TEAM SELECTION",
-    description: "WE HAVE TO GET IT RIGHT !",
+    month: "JUNE",
+    date: "6/21-6/23 & 6/27-6/29",
+    title: "LEVEL 1-4 STUNT CAMP",
+    category: "JUNE",
+    description: ["LEVEL 1-4 STUNT CAMP 6/21-6/23 & 6/27-6/29"],
+    icon: ShieldCheck,
+  },
+  {
+    month: "JUNE",
+    date: "6/24-6/26",
+    title: "LEVEL 5-6 STUNT CAMP.",
+    category: "JUNE",
+    description: [
+      "LEVEL 5-6 STUNT CAMP. 6/24-6/26",
+      "Regarding stunt camp: TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSTION",
+    ],
+    icon: ShieldCheck,
+  },
+  {
+    month: "JUNE",
+    date: "6/30",
+    title: "FINAL TEAM PLACEMENTS",
+    category: "JUNE",
+    description: ["FINAL TEAM PLACEMENTS 6/30"],
     icon: CheckCircle2,
   },
   {
     month: "JUNE",
-    window: "6/3",
-    title: "LATE TRYOUTS",
-    category: "2ND TRYOUT 6/3",
-    description: "LATE TRYOUTS",
-    icon: Flag,
-  },
-  {
-    month: "JUNE",
-    window: "6/5-6/7",
-    title: "TUMBLE CAMP",
-    category: "JUNE",
-    description: "TUMBLE CAMP",
-    icon: Activity,
-  },
-  {
-    month: "JUNE",
-    window: "6/21-6/23 & 6/27-6/29",
-    title: "LEVEL 1-4 STUNT CAMP",
-    category: "JUNE",
-    description: "LEVEL 1-4 STUNT CAMP",
-    icon: ShieldCheck,
-  },
-  {
-    month: "JUNE",
-    window: "6/24-6/26",
-    title: "LEVEL 5-6 STUNT CAMP.",
-    category: "JUNE",
-    description: "LEVEL 5-6 STUNT CAMP.",
-    icon: ShieldCheck,
-  },
-  {
-    month: "JUNE",
-    window: "JUNE",
-    title: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSTION",
-    category: "JUNE",
-    description: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSTION",
+    date: "6/15",
+    title: "BENCHMARK#1: FLYER FLEX MEASURABLE",
+    category: "BENCHMARK#1",
+    description: [
+      "Turn in a collage of your flyers body positions rated from best to worst. Body positons include: Heel stretch, Over stretch, Bow and arrow, Scorpion, Scale, and arabesque.",
+    ],
+    due: "Collage DUE: 6/15",
     icon: ClipboardCheck,
   },
   {
-    month: "JUNE",
-    window: "6/30",
-    title: "FINAL TEAM PLACEMENTS",
-    category: "TEAM SELECTION",
-    description: "FINAL TEAM PLACEMENTS 6/30",
-    icon: CheckCircle2,
-  },
-  {
     month: "JULY",
-    window: "7/9",
-    title: "BENCHMARK #1 TUMBLING  SKILL SELECTION",
-    category: "BENCHMARK  #1",
-    description: "TUMBLING  SKILL SELECTION",
+    date: "7/9",
+    title: "BENCH MARK #2 TUMBLING SKILL SELECTION",
+    category: "BENCH MARK #2",
+    description: [
+      "A written outline of the running and standing tumbling passes you plan to use in your routine for the upcoming season.",
+    ],
     due: "OUTLINE DUE: 7/9",
     icon: ClipboardCheck,
   },
   {
     month: "JULY",
-    window: "7/13",
-    title: "BENCHMARK #2 TEAM DRILLS",
-    category: "BENCHMARK  #2",
-    description: "TEAM DRILLS",
-    due: "VIDEO DUE  7/13",
+    date: "7/13",
+    title: "BENCHMARK #3 TEAM DRILLS",
+    category: "BENCHMARK #3",
+    description: ["Teams are expected to be able to perform 4 of the 2:30 daily tumbling drills ."],
+    due: "VIDEO DUE 7/13",
     icon: Video,
   },
   {
     month: "JULY",
-    window: "7/16",
-    title: "BENCHMARK #3 ROUTINE CHOREO MONTH",
-    category: "BENCHMARK  #3",
-    description: "JUMPS IN MAX #S SINGLE TOE, DOUBLE JUMP SEQUENCE AND ANY JUMP NOT PERFORMED.  IE: LEFT HURDLER OR PIKE",
+    date: "7/16",
+    title: "BENCHMARK #4: JUMPS IN MAX #S",
+    category: "BENCHMARK #4",
+    description: [
+      "HAVE YOUR TEAM PERFORM INDIIVUAL VIDEOS OF A SINGLE TOE, RIGHT HURDLER TOE DOUBLE JUMP SEQUENCE, THEN ONE OF A LEFT HURDLER, ONE AND ONE OF A PIKE",
+    ],
     due: "VIDEO DUE:7/16",
     icon: Video,
   },
   {
     month: "AUGUST",
-    window: "8/20",
-    title: "BENCHMARK #4 STUNT SEQUENCE",
-    category: "(ELEMENT BY ELEMENT)",
-    description: "STUNT SEQUENCE (ELEMENT BY ELEMENT) CREATIVE IN 1-2 ELEMENTS MID CREATIVE ELEMENT FINAL 1-2 ELEMENTS & DISMOUNT",
+    date: "8/20",
+    title: "BENCHMARK #5: STUNT SEQUENCE (ELEMENT BY ELEMENT)",
+    category: "BENCHMARK #5",
+    description: [
+      "The explectation for the stunt sequence is",
+      "A CREATIVE IN + 1-2 ELEMENTS",
+      "MID CREATIVE ELEMENT",
+      "FINAL 1-2 ELEMENTS & DISMOUNT",
+      "You must submit a video of your stunt sequence in broken down in that order.",
+    ],
     due: "VIDEO DUE:8/20",
     icon: ShieldCheck,
   },
   {
+    month: "SEPTEMBER",
+    date: "9/16",
+    title: "BENCHMARK #6: 1st half of stunt and 2nd half of stunt full out",
+    category: "BENCHMARK #6",
+    description: [
+      "You must submit 2 videos. One of your first half of the stunt and one of the second through the end.",
+    ],
+    due: "VIDEO DUE:9/16",
+    icon: Video,
+  },
+  {
     month: "OCTOBER",
-    window: "10/13",
-    title: "BENCHMARK #5 INITIAL PYRAMID CONCEPTS",
-    category: "PYRAMID CHOREO  MONTH",
-    description: "INITIAL PYRAMID CONCEPTS",
+    date: "10/13",
+    title: "OCTOBER INITIAL PYRAMID CONCEPTS",
+    category: "OCTOBER",
+    description: ["Send a video of your initial pyramid concepts"],
     due: "VIDEO DUE:10/13",
     icon: Route,
   },
   {
     month: "OCTOBER",
-    window: "10/15",
-    title: "BENCHMARK #6 FULL OUT",
-    category: "PYRAMID CHOREO  MONTH",
-    description: "FULL OUT (MINUST PYRAMID/DANCE",
+    date: "10/15",
+    title: "BENCHMARK #7: Full out (minus pyramid & Dance)",
+    category: "BENCHMARK #7",
+    description: ["BENCHMARK #7: Full out (minus pyramid & Dance)"],
     due: "VIDEO DUE:10/15",
     icon: Trophy,
   },
   {
     month: "OCTOBER",
-    window: "10/16",
-    title: "BENCHMARK #7 FLYER FLEX MEASURABLE",
-    category: "PYRAMID CHOREO  MONTH",
-    description: "FLYER FLEX MEASURABLE BOBY POSITION COLLAGE INCLUDING: HEEL STRETCH, FRONT STRETCH, BOW & ARROW, ARABESQUE, SCALE & NEEDLE",
+    date: "10/16",
+    title: "BENCHMARK #8 FLYER FLEX MEASURABLE",
+    category: "BENCHMARK #8",
+    description: [
+      "Turn in a collage of your flyers body positions rated from best to worst. Body positons include: Heel stretch, Over stretch, Bow and arrow, Scorpion, Scale, and arabesque.",
+    ],
     due: "COLLAGE DUE:10/16",
     icon: ClipboardCheck,
   },
   {
     month: "OCTOBER",
-    window: "10/20",
-    title: "BENCHMARK #8 JUMPS IN MAX #S",
-    category: "PYRAMID CHOREO  MONTH",
-    description: "JUMPS IN MAX #S SINGLE TOE, DOUBLE JUMP SEQUENCE AND ANY JUMP NOT PERFORMED.  IE: LEFT HURDLER OR PIKE (INCLUDING NON-JUMPERS) # 1. VIDEO OF JUMPS PERFORMED #2 INDIVIAL COLLAGE",
-    due: "COLLAGE DUE 10/20",
+    date: "10/20",
+    title: "BENCHMARK #9 JUMPS IN MAX #S",
+    category: "BENCHMARK #9",
+    description: [
+      "1. HAVE YOUR TEAM PERFORM INDIIVUAL VIDEOS OF A SINGLE TOE, RIGHT HURDLER TOE DOUBLE JUMP SEQUENCE, THEN ONE OF A LEFT HURDLER, ONE AND ONE OF A PIKE.",
+      "2. Submit a photo collage of your toe touches and rate them best to worst.",
+    ],
+    due: "VIDEO & COLLAGE DUE 10/20",
     icon: ClipboardCheck,
   },
   {
     month: "OCTOBER",
-    window: "9/24",
-    title: "BENCHMARK #9 FULL STUNT ISOLATION",
-    category: "BENCHMARK  #9",
-    description: "FULL STUNT ISOLATION",
-    due: "VIDEO DUE:9/24",
-    icon: Video,
-  },
-  {
-    month: "OCTOBER",
-    window: "OCTOBER",
-    title: "BENCHMARK #10 FLYER BODY POSITION CHECK",
-    category: "DANCE  CHOREO MONTH",
-    description: "FLYER BODY POSITION CHECK",
-    icon: ClipboardCheck,
-  },
-  {
-    month: "OCTOBER",
-    window: "10/15",
-    title: "BENCHMARK #11 FULL OUT",
-    category: "DANCE  CHOREO MONTH",
-    description: "FULL OUT FROM THIS POINT FORWARD 2 FULL OUTS PER PRACTICE. NO EXCEPTIONS.",
-    due: "VIDEO DUE:10/15",
-    icon: Trophy,
-  },
-  {
-    month: "OCTOBER",
-    window: "10/23",
-    title: "BENCHMARK #12 1ST HALF OF PRAMID",
-    category: "DANCE  CHOREO MONTH",
-    description: "1ST HALF OF PRAMID    (FULL SPEED) 2ND HALF OF PYRAMID  (FULL SPEED)",
-    due: "VIDEO DUE:10/23",
-    icon: Route,
-  },
-  {
-    month: "OCTOBER",
-    window: "10/29",
-    title: "BENCHMARK #13 PYRAMID ISOLATION DANCE CHOREO",
-    category: "Gym rehearsal",
-    description: "PYRAMID ISOLATION DANCE CHOREO",
-    due: "VIDEO DUE:10/29 10/29/2023",
+    date: "10/29/2023",
+    title: "BENCHMARK #10: IN GYM SHOWCASE",
+    category: "BENCHMARK #10",
+    description: ["Teams must be able to go full out."],
+    due: "10/29/2023",
     icon: Trophy,
   },
   {
     month: "NOVEMBER",
-    window: "11/5/2023",
-    title: "BENCHMARK #9 USASF LEGALITY SUBMISSION",
-    category: "BENCHMARK  #9",
-    description: "USASF LEGALITY SUBMISSION All building (INLCUDING LIFTS)",
-    due: "DUE 11/5/2023",
+    date: "11/5/2023",
+    title: "BENCHMARK #11: USASF LEGALITY SUBMISSION",
+    category: "BENCHMARK #11",
+    description: [
+      "All building (INLCUDING LIFTS)",
+      "Submit ALL of your building elements …If itcomes off the ground it gets submitted period.",
+    ],
+    due: "USASF LEGAL RULINGS DUE 11/5/2023",
     icon: ClipboardCheck,
   },
   {
     month: "NOVEMBER",
-    window: "11/5/2023-12/1/2023",
-    title: "BENCHMARK #10 RUBRIC DOUBLE CHECK",
-    category: "BENCHMARK  #10",
-    description: "RUBRIC DOUBLE CHECK 1. Fill out the document DUE: 11/5/2023 2. Email the form to our scoring rep DUE: 11/6/2023 3. Post confirmation that you meet #’s DUE: 12/1/2023",
-    due: "DUE 11/5/2023-12/1/2023",
+    date: "11/5/2023 / 11/6/2023 / 12/1/2023",
+    title: "BENCHMARK #12: RUBRIC DOUBLE CHECK",
+    category: "BENCHMARK #12",
+    description: [
+      "1. Fill out the document DUE: 11/5/2023",
+      "2. Email the form to our scoring rep DUE: 11/6/2023",
+      "3. Post confirmation that you meet #’s DUE: 12/1/2023",
+    ],
     icon: ClipboardCheck,
-  },
-  {
-    month: "NOVEMBER",
-    window: "11/12/2023",
-    title: "BENCHMARK #11 GIFT OF THE SEASON TEAM SHOWCASE",
-    category: "FULL OUT",
-    description: "GIFT OF THE SEASON TEAM SHOWCASE FULL OUT 21 days left of training #Prodigy elevate",
-    due: "11/12/2023",
-    icon: Trophy,
   },
   {
     month: "DECEMBER",
-    window: "12/2",
-    title: "BENCHMARK #11 PHYSICAL FITNESS TEST",
-    category: "DECEMBER",
-    description: "PHYSICAL FITNESS TEST 1. 2 Rounds of the warm-up 2. Stretch system/flyer stretch",
-    due: "VIDEO DUE: PRIOR TO LEAVING FOR BREAK 12/2",
+    date: "PRIOR TO LEAVING FOR BREAK",
+    title: "BENCHMARK #13: PHYSICAL FITNESS TEST",
+    category: "BENCHMARK #13",
+    description: [
+      "PHYSICAL FITNESS TEST",
+      "1. Have your team do 2 Rounds of the warm-up and record it on one continuous video",
+      "2. Same for the Stretch system/flyer stretch",
+    ],
+    due: "VIDEO DUE: PRIOR TO LEAVING FOR BREAK",
     icon: Activity,
   },
   {
     month: "DECEMBER",
-    window: "12/16 & 12/17",
-    title: "THE PRODIGY SHOW DOWN",
+    date: "12/12",
+    title: "12/12 COMPETIION",
     category: "DECEMBER",
-    description: "THE PRODIGY SHOW DOWN",
+    description: ["12/12 COMPETIION"],
+    icon: Trophy,
+  },
+  {
+    month: "DECEMBER",
+    date: "12/20",
+    title: "12/20 COMPETITION",
+    category: "DECEMBER",
+    description: ["12/20 COMPETITION"],
     icon: Trophy,
   },
 ];
 
 const stats = [
-  { label: "SEASON ROAD MAP", value: "2023-2024" },
-  { label: "MAY", value: "JUNE" },
-  { label: "NOVEMBER", value: "DECEMBER" },
+  { label: "BENCHMARK#1", value: "Collage DUE: 6/15" },
+  { label: "BENCHMARK #7", value: "VIDEO DUE:10/15" },
+  { label: "BENCHMARK #13", value: "VIDEO DUE: PRIOR TO LEAVING FOR BREAK" },
 ];
 
 const monthSummary = Array.from(new Set(roadmap.map((item) => item.month))).map((month) => ({
   month,
-  count: roadmap.filter((item) => item.month === month).length,
 }));
 
 function RoadLine() {
@@ -332,8 +296,8 @@ function RoadLine() {
         <linearGradient id="roadGlow" x1="320" y1="0" x2="320" y2="2600" gradientUnits="userSpaceOnUse">
           <stop stopColor="#68B8FF" stopOpacity="0.15" />
           <stop offset="0.28" stopColor="#2A91FF" stopOpacity="0.88" />
-          <stop offset="0.58" stopColor="#86D2FF" stopOpacity="0.45" />
-          <stop offset="1" stopColor="#2D8EFF" stopOpacity="0.88" />
+          <stop offset="0.58" stopColor="#86D2FF" stopOpacity="0.68" />
+          <stop offset="1" stopColor="#154DFF" stopOpacity="0.28" />
         </linearGradient>
       </defs>
     </svg>
@@ -353,15 +317,13 @@ export default function Home() {
         <div className="absolute inset-0 hero-noise" aria-hidden="true" />
 
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-          <a href="/" className="group flex items-center gap-3" aria-label="United Elite home">
-            <img
-              src={logoUrl}
-              alt="United Elite shield logo"
-              className="h-14 w-14 object-contain drop-shadow-[0_0_18px_rgba(54,150,255,0.55)] transition-transform duration-300 group-hover:scale-105"
-            />
+          <a href="/" className="group flex items-center gap-3" aria-label="Season road map home">
+            <div className="flex h-14 w-14 items-center justify-center border border-blue-200/35 bg-blue-400/10 shadow-[0_0_18px_rgba(54,150,255,0.35)] backdrop-blur">
+              <Route className="h-7 w-7 text-blue-100" />
+            </div>
             <div>
               <p className="font-display text-2xl uppercase tracking-[0.18em] text-white">SEASON ROAD MAP</p>
-              <p className="text-[0.68rem] uppercase tracking-[0.38em] text-blue-200/80">2023-2024</p>
+              <p className="text-[0.68rem] uppercase tracking-[0.38em] text-blue-200/80">BENCHMARK#1</p>
             </div>
           </a>
           <a
@@ -381,14 +343,14 @@ export default function Home() {
           >
             <div className="mb-8 inline-flex items-center gap-3 border border-blue-300/25 bg-black/35 px-4 py-2 text-xs uppercase tracking-[0.28em] text-blue-100 backdrop-blur">
               <MapPinned className="h-4 w-4 text-blue-300" />
-              SEASON ROAD MAP 2023-2024
+              SEASON ROAD MAP
             </div>
             <h1 className="font-display text-[clamp(4rem,12vw,10.5rem)] uppercase leading-[0.78] tracking-[0.02em] text-white text-shadow-blue">
               Season
               <span className="block text-blue-300">Road Map</span>
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-200/86 sm:text-xl">
-              TRYOUTS 5/3-5-4 STAFF TRAINING 5/8-5/9 2ND TRYOUTS 5/13 TUMBLING SEMINAR 5/24-5/25
+              BENCHMARK#1: FLYER FLEX MEASURABLE
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
@@ -401,7 +363,7 @@ export default function Home() {
                 href="#benchmarks"
                 className="inline-flex items-center justify-center gap-3 border border-white/20 bg-white/5 px-6 py-4 font-heading text-sm uppercase tracking-[0.24em] text-white backdrop-blur transition hover:border-blue-200/60 hover:bg-blue-300/10"
               >
-                BENCHMARK #1
+                BENCHMARK #13
               </a>
             </div>
           </motion.div>
@@ -427,7 +389,7 @@ export default function Home() {
           {stats.map((stat) => (
             <div key={stat.label} className="bevel-panel px-6 py-5">
               <p className="font-heading text-xs uppercase tracking-[0.28em] text-blue-200/70">{stat.label}</p>
-              <p className="mt-2 font-display text-4xl uppercase text-white">{stat.value}</p>
+              <p className="mt-2 font-display text-2xl uppercase text-white sm:text-3xl">{stat.value}</p>
             </div>
           ))}
         </div>
@@ -445,11 +407,11 @@ export default function Home() {
             <div>
               <p className="font-heading text-sm uppercase tracking-[0.34em] text-blue-300">SEASON ROAD MAP</p>
               <h2 className="mt-4 font-display text-6xl uppercase leading-[0.9] text-white sm:text-7xl">
-                2023-2024
+                BENCHMARK#1
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-slate-300">
-              MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER
+              Turn in a collage of your flyers body positions rated from best to worst. Body positons include: Heel stretch, Over stretch, Bow and arrow, Scorpion, Scale, and arabesque.
             </p>
           </div>
 
@@ -459,7 +421,7 @@ export default function Home() {
               const alignRight = index % 2 === 1;
               return (
                 <motion.article
-                  key={`${item.month}-${item.window}-${item.title}`}
+                  key={`${item.month}-${item.date ?? "no-date"}-${item.title}`}
                   initial={{ opacity: 0, y: 34 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.18 }}
@@ -491,9 +453,9 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
               <p className="font-heading text-sm uppercase tracking-[0.34em] text-blue-300">SEASON ROAD MAP</p>
-              <h2 className="mt-4 font-display text-6xl uppercase leading-[0.92] text-white">2023-2024</h2>
+              <h2 className="mt-4 font-display text-6xl uppercase leading-[0.92] text-white">BENCHMARK #13</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                BENCHMARK #1 BENCHMARK #2 BENCHMARK #3 BENCHMARK #4 BENCHMARK #5 BENCHMARK #6 BENCHMARK #7 BENCHMARK #8 BENCHMARK #9 BENCHMARK #10 BENCHMARK #11 BENCHMARK #12 BENCHMARK #13
+                VIDEO DUE: PRIOR TO LEAVING FOR BREAK
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -508,9 +470,6 @@ export default function Home() {
                 >
                   <Sparkles className="h-5 w-5 text-blue-300" />
                   <p className="mt-6 font-display text-5xl uppercase text-white">{month.month}</p>
-                  <p className="mt-2 font-heading text-sm uppercase tracking-[0.22em] text-slate-300">
-                    SEASON ROAD MAP
-                  </p>
                 </motion.div>
               ))}
             </div>
@@ -520,15 +479,17 @@ export default function Home() {
 
       <footer className="border-t border-white/10 bg-black px-5 py-10 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <a href="/" className="flex items-center gap-3" aria-label="United Elite home footer link">
-            <img src={logoUrl} alt="United Elite shield logo" className="h-12 w-12 object-contain" />
+          <a href="/" className="flex items-center gap-3" aria-label="Season road map footer link">
+            <div className="flex h-12 w-12 items-center justify-center border border-blue-200/30 bg-blue-400/10">
+              <Route className="h-6 w-6 text-blue-100" />
+            </div>
             <div>
               <p className="font-heading text-sm uppercase tracking-[0.28em] text-white">SEASON ROAD MAP</p>
-              <p className="text-sm text-slate-400">2023-2024</p>
+              <p className="text-sm text-slate-400">12/20 COMPETITION</p>
             </div>
           </a>
           <p className="max-w-xl text-sm leading-6 text-slate-400">
-            THE PRODIGY SHOW DOWN 12/16 & 12/17
+            12/12 COMPETIION 12/20 COMPETITION
           </p>
         </div>
       </footer>
@@ -536,7 +497,7 @@ export default function Home() {
   );
 }
 
-function RoadmapCard({ item, index, Icon }: { item: RoadmapItem; index: number; Icon: typeof Flag }) {
+function RoadmapCard({ item, Icon }: { item: RoadmapItem; index: number; Icon: typeof Flag }) {
   return (
     <div className="roadmap-card group">
       <div className="flex items-start justify-between gap-5">
@@ -549,10 +510,14 @@ function RoadmapCard({ item, index, Icon }: { item: RoadmapItem; index: number; 
         </div>
       </div>
       <div className="mt-5 flex flex-wrap gap-2">
-        <span className="road-pill"><CalendarDays className="h-3.5 w-3.5" /> {item.window}</span>
+        {item.date && <span className="road-pill"><CalendarDays className="h-3.5 w-3.5" /> {item.date}</span>}
         <span className="road-pill blue">{item.category}</span>
       </div>
-      <p className="mt-5 text-base leading-7 text-slate-300">{item.description}</p>
+      <div className="mt-5 space-y-3 text-base leading-7 text-slate-300">
+        {item.description.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
       {item.due && <p className="mt-5 border-l-2 border-blue-300 pl-4 font-heading text-sm uppercase tracking-[0.16em] text-blue-100">{item.due}</p>}
     </div>
   );
