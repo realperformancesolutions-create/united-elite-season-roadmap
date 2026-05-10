@@ -1,6 +1,7 @@
 /*
 Design philosophy reminder for this file: Neo-Futurist Sports Cartography. Reinforce the feeling of navigating a dark competition-night road with electric United blue waypoints, shield-inspired milestone cards, beveled metallic trim, and disciplined athletic motion. If a choice does not strengthen the roadmap journey, remove it.
 */
+import { useEffect, type MouseEvent } from "react";
 import { motion } from "framer-motion";
 import {
   Activity,
@@ -331,6 +332,14 @@ function getDateFirstTitle(item: RoadmapItem) {
   return parseMonthDay(item.window) ? `${item.window} ${item.title}` : item.title;
 }
 
+function getRoadmapItemId(item: RoadmapItem) {
+  return `roadmap-${item.window}-${item.title}`
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function RoadLine() {
   return (
     <svg
@@ -376,6 +385,27 @@ function RoadLine() {
 
 export default function Home() {
   const upcomingBenchmark = getUpcomingBenchmark();
+  const upcomingBenchmarkHref = upcomingBenchmark ? `#${getRoadmapItemId(upcomingBenchmark)}` : "#roadmap";
+
+  useEffect(() => {
+    const targetId = window.location.hash.slice(1);
+    if (!targetId) return;
+
+    const scrollTimer = window.setTimeout(() => {
+      document.getElementById(targetId)?.scrollIntoView({ block: "start" });
+    }, 80);
+
+    return () => window.clearTimeout(scrollTimer);
+  }, []);
+
+  const handleUpcomingBenchmarkClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (!upcomingBenchmark) return;
+
+    event.preventDefault();
+    const targetId = getRoadmapItemId(upcomingBenchmark);
+    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.history.pushState(null, "", `#${targetId}`);
+  };
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#03070d] text-slate-50">
@@ -424,9 +454,9 @@ export default function Home() {
               <span className="block text-blue-300">Road Map</span>
             </h1>
             {upcomingBenchmark && (
-              <div className="mt-8 max-w-2xl border-l-2 border-blue-300 bg-black/25 py-4 pl-5 text-slate-200/90 backdrop-blur">
+              <div className="mt-8 max-w-[calc(100vw-3rem)] border-l-2 border-blue-300 bg-black/25 py-4 pl-5 pr-3 text-slate-200/90 backdrop-blur sm:max-w-2xl">
                 <p className="font-heading text-xs uppercase tracking-[0.28em] text-blue-300">Upcoming Benchmark</p>
-                <p className="mt-2 text-lg leading-8 sm:text-xl">{getDateFirstTitle(upcomingBenchmark)}</p>
+                <p className="mt-2 break-words text-lg leading-8 sm:text-xl">{getDateFirstTitle(upcomingBenchmark)}</p>
                 {upcomingBenchmark.due && <p className="mt-1 text-sm uppercase tracking-[0.14em] text-blue-100/80">{upcomingBenchmark.due}</p>}
               </div>
             )}
@@ -438,8 +468,9 @@ export default function Home() {
                 SEASON ROAD MAP <Route className="h-5 w-5 transition group-hover:translate-x-1" />
               </a>
               <a
-                href="#roadmap"
-                className="inline-flex items-center justify-center gap-3 border border-white/20 bg-white/5 px-6 py-4 font-heading text-sm uppercase tracking-[0.24em] text-white backdrop-blur transition hover:border-blue-200/60 hover:bg-blue-300/10"
+                href={upcomingBenchmarkHref}
+                onClick={handleUpcomingBenchmarkClick}
+                className="inline-flex items-center justify-center gap-3 border border-white/20 bg-white/5 px-6 py-4 text-center font-heading text-sm uppercase tracking-[0.24em] text-white backdrop-blur transition hover:border-blue-200/60 hover:bg-blue-300/10"
               >
                 UPCOMING BENCHMARK
               </a>
@@ -489,14 +520,14 @@ export default function Home() {
               return (
                 <motion.article
                   key={`${item.month}-${item.window}-${item.title}`}
-                  initial={{ opacity: 0, y: 34 }}
+                  initial={false}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.18 }}
                   transition={{ duration: 0.55, delay: Math.min(index * 0.025, 0.22), ease: "easeOut" }}
                   className={`relative grid min-h-40 items-center lg:grid-cols-[1fr_104px_1fr] ${index > 0 ? "lg:-mt-4" : ""}`}
                 >
                   <div className={`${alignRight ? "hidden lg:block" : "lg:pr-8"}`}>
-                    {!alignRight && <RoadmapCard item={item} index={index} Icon={Icon} />}
+                    {!alignRight && <RoadmapCard item={item} index={index} Icon={Icon} cardId={getRoadmapItemId(item)} />}
                   </div>
                   <div className="relative order-first mb-4 flex justify-start lg:order-none lg:mb-0 lg:justify-center">
                     <div className="waypoint-marker">
@@ -505,7 +536,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={`${alignRight ? "lg:pl-8" : "hidden lg:block"}`}>
-                    {alignRight && <RoadmapCard item={item} index={index} Icon={Icon} />}
+                    {alignRight && <RoadmapCard item={item} index={index} Icon={Icon} cardId={getRoadmapItemId(item)} />}
                   </div>
                 </motion.article>
               );
@@ -532,17 +563,17 @@ export default function Home() {
   );
 }
 
-function RoadmapCard({ item, index, Icon }: { item: RoadmapItem; index: number; Icon: typeof Flag }) {
+function RoadmapCard({ item, index, Icon, cardId }: { item: RoadmapItem; index: number; Icon: typeof Flag; cardId: string }) {
   return (
-    <div className="roadmap-card group">
-      <div className="flex items-start justify-between gap-5">
-        <div>
+    <div id={cardId} className="roadmap-card group scroll-mt-8">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+        <div className="min-w-0">
           <p className="font-heading text-xs uppercase tracking-[0.28em] text-blue-300">{item.month}</p>
-          <h3 className="mt-3 font-heading text-2xl uppercase leading-tight text-white sm:text-3xl">{getDateFirstTitle(item)}</h3>
+          <h3 className="mt-3 break-words font-heading text-2xl uppercase leading-tight text-white sm:text-3xl">{getDateFirstTitle(item)}</h3>
         </div>
-        <div className={item.competitionLogo ? "flex min-h-16 min-w-24 items-center justify-center rounded-sm border border-blue-200/20 bg-black/35 p-2" : "card-icon"}>
+        <div className={item.competitionLogo ? "flex min-h-16 w-full max-w-44 shrink-0 items-center justify-center rounded-sm border border-blue-200/20 bg-black/35 p-2 sm:w-auto sm:min-w-24" : "card-icon"}>
           {item.competitionLogo ? (
-            <img src={item.competitionLogo} alt={`${item.title} logo`} className="max-h-14 max-w-28 object-contain" />
+            <img src={item.competitionLogo} alt={`${item.title} logo`} className="max-h-16 w-full max-w-36 object-contain sm:max-h-14 sm:max-w-28" />
           ) : (
             <Icon className="h-5 w-5" />
           )}

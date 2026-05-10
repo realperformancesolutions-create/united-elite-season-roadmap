@@ -92,3 +92,11 @@
 - [ ] Use the provided `ACP-Web-Logo.webp` American Cheer Power logo on the appropriate competition card or cards.
 - [ ] Remove backgrounds or prepare transparent variants only as needed while preserving the exact logo shapes and proportions.
 - [ ] Upload the prepared user-provided competition logos for safe static-site use.
+
+## Upcoming Benchmark Button Navigation Fix
+
+- [x] Fix hero **Upcoming Benchmark** button so it jumps directly to the corresponding upcoming benchmark roadmap card instead of only scrolling to the general roadmap section.
+- [x] Ensure Encore and American Cheer Power logo cards display cleanly on mobile without overflow, crowding, or unreadable sizing.
+- [x] Verify the page remains mobile friendly on a small viewport, including hero buttons, roadmap cards, and competition logos.
+- [x] Build and verify that the button lands on the matching benchmark card.
+- [x] Commit, push, and save a checkpoint for the targeted navigation and mobile fix.
