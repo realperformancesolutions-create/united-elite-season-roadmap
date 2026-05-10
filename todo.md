@@ -40,17 +40,17 @@
 ## Month Row Removal
 - [x] Remove the visible `MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER` text row shown in the screenshot without changing benchmark content or layout.
 - [x] Build and verify the row is gone.
-- [ ] Commit, push, and save a checkpoint for the targeted removal.
+- [x] Commit, push, and save a checkpoint for the targeted removal.
 
 ## Header Text Cleanup
 - [x] Remove the visible `TRYOUTS 5/3-5-4 STAFF TRAINING 5/8-5/9 2ND TRYOUTS 5/13 TUMBLING SEMINAR 5/24-5/25` row shown in the screenshot.
 - [x] Remove the confusing stacked month labels that read as `MAY` above `JUNE` and `NOVEMBER` above `DECEMBER`.
 - [x] Build and verify the header cleanup does not alter benchmark content.
-- [ ] Commit, push, and save a checkpoint for the targeted header cleanup.
+- [x] Commit, push, and save a checkpoint for the targeted header cleanup.
 
 ## TIMELINE.docx Authoritative Timeline Replacement
 - [x] Extract the complete timeline content from `/home/ubuntu/upload/TIMELINE.docx` and save a structured source reference.
 - [x] Replace the roadmap timeline content in `Home.tsx` using only the information from `TIMELINE.docx`.
 - [x] Remove the visible month-list/header text previously flagged in screenshots, including the repeated `MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER` text.
 - [x] Build and verify the page uses the TIMELINE.docx content without the flagged header text.
-- [ ] Commit, push, and save a checkpoint for the document-based timeline update.
+- [x] Commit, push, and save a checkpoint for the document-based timeline update.
