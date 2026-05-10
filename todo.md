@@ -38,19 +38,57 @@
 - [ ] Commit, push, and save a checkpoint for the corrected benchmark mapping.
 
 ## Month Row Removal
-- [x] Remove the visible `MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER` text row shown in the screenshot without changing benchmark content or layout.
-- [x] Build and verify the row is gone.
-- [x] Commit, push, and save a checkpoint for the targeted removal.
+- [ ] Remove the visible `MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER` text row shown in the screenshot without changing benchmark content or layout.
+- [ ] Build and verify the row is gone.
+- [ ] Commit, push, and save a checkpoint for the targeted removal.
 
-## Header Text Cleanup
-- [x] Remove the visible `TRYOUTS 5/3-5-4 STAFF TRAINING 5/8-5/9 2ND TRYOUTS 5/13 TUMBLING SEMINAR 5/24-5/25` row shown in the screenshot.
-- [x] Remove the confusing stacked month labels that read as `MAY` above `JUNE` and `NOVEMBER` above `DECEMBER`.
-- [x] Build and verify the header cleanup does not alter benchmark content.
-- [x] Commit, push, and save a checkpoint for the targeted header cleanup.
+## May Roadmap Additions From Screenshot
 
-## TIMELINE.docx Authoritative Timeline Replacement
-- [x] Extract the complete timeline content from `/home/ubuntu/upload/TIMELINE.docx` and save a structured source reference.
-- [x] Replace the roadmap timeline content in `Home.tsx` using only the information from `TIMELINE.docx`.
-- [x] Remove the visible month-list/header text previously flagged in screenshots, including the repeated `MAY JUNE JULY AUGUST OCTOBER NOVEMBER DECEMBER` text.
-- [x] Build and verify the page uses the TIMELINE.docx content without the flagged header text.
-- [x] Commit, push, and save a checkpoint for the document-based timeline update.
+- [ ] Add May roadmap entries for TRYOUTS 5/3-5/4 with `WE HAVE TO GET IT RIGHT`.
+- [ ] Add May roadmap entry for STAFF TRAINING 5/8-5/9.
+- [ ] Add May roadmap entry for 2ND TRYOUTS 5/13.
+- [ ] Add May roadmap entry for TUMBLING SEMINAR 5/24-5/25.
+- [ ] Build and verify the May entries appear as roadmap cards without restoring the old repeated header/month row.
+- [ ] Commit, push, and save a checkpoint for the May roadmap additions.
+
+## May Roadmap Additions And Date-First Formatting
+
+- [ ] Add May roadmap entries for TRYOUTS 5/3-5/4 with `WE HAVE TO GET IT RIGHT`.
+- [ ] Add May roadmap entry for STAFF TRAINING 5/8-5/9.
+- [ ] Add May roadmap entry for 2ND TRYOUTS 5/13.
+- [ ] Add May roadmap entry for TUMBLING SEMINAR 5/24-5/25.
+- [ ] Convert dated listing text throughout the roadmap so the date appears before the listing, such as `6/5-6/7 TUMBLE CAMP`.
+- [ ] Build and verify the May entries appear as roadmap cards without restoring the old repeated header/month row.
+- [ ] Commit, push, and save a checkpoint for the May roadmap additions and date-first formatting.
+
+## Hero Benchmark Notice Fix
+
+- [ ] Remove the random static `BENCHMARK #13` hero button/label.
+- [ ] Replace the hero benchmark line with an `UPCOMING BENCHMARK` notice that selects the next dated benchmark from the roadmap.
+- [ ] Ensure the upcoming benchmark notice advances automatically after a benchmark date passes.
+- [ ] Verify the hero no longer shows unrelated benchmark text while the roadmap keeps the same layout.
+
+## Random Benchmark Summary Section Removal
+
+- [ ] Remove the three-card benchmark summary section showing random benchmark due-date cards.
+- [ ] Verify the section is gone without removing the actual roadmap timeline cards.
+
+## Random Month Tile Section Removal
+
+- [ ] Remove the lower month-tile section that repeats months without clear roadmap value.
+- [ ] Verify the page still keeps the actual roadmap timeline cards after removing the lower month-tile section.
+
+## Competition Logo Extraction And Placement
+
+- [ ] Extract the competition logo artwork from the source document used for the roadmap.
+- [ ] Remove the logo background and prepare transparent web-ready image assets outside the project directory.
+- [ ] Upload the prepared competition logo assets for safe static-site use.
+- [ ] Add the extracted competition logos to the competition roadmap cards.
+- [ ] Verify competition cards show the correct logos without breaking the roadmap layout.
+
+## User-Provided Competition Logos
+
+- [ ] Use the provided `EN-1.webp` Encore logo on the appropriate competition card or cards.
+- [ ] Use the provided `ACP-Web-Logo.webp` American Cheer Power logo on the appropriate competition card or cards.
+- [ ] Remove backgrounds or prepare transparent variants only as needed while preserving the exact logo shapes and proportions.
+- [ ] Upload the prepared user-provided competition logos for safe static-site use.
