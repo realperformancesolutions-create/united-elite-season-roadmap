@@ -326,16 +326,6 @@ const roadmap: RoadmapItem[] = [
     due: "DUE: 11/5/2023-12/1/2023",
     icon: ClipboardCheck,
   },
-  {
-    month: "NOVEMBER",
-    window: "11/12/2023",
-    title: "BENCHMARK #20 GIFT OF THE SEASON TEAM SHOWCASE",
-    category: "BENCHMARK #20",
-    description:
-      "GIFT OF THE SEASON TEAM SHOWCASE -- FULL OUT. 21 DAYS LEFT OF TRAINING. #PRODIGY ELEVATE",
-    due: "11/12/2023",
-    icon: Trophy,
-  },
   // -- DECEMBER --------------------------------------------------------------
   {
     month: "DECEMBER",
