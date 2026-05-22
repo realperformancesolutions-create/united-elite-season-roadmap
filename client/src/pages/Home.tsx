@@ -125,6 +125,15 @@ const roadmap: RoadmapItem[] = [
     icon: CheckCircle2,
   },
   {
+    month: "JUNE",
+    window: "6/28",
+    title: "BENCHMARK #3 STUNT CAMP SHOWCASE",
+    category: "BENCHMARK #3",
+    description: "TEAMS MUST SUBMIT A VIDEO OF THE CREATIVE ENTRIES AND STUNT SEQUENCES THEY BUILT DURING STUNT CAMP. WE DON'T EXPECT IT TO BE PERFECT, BUT WE WOULD LIKE TO SEE WHAT THEY CAME UP WITH.",
+    due: "VIDEO DUE: 6/28",
+    icon: Video,
+  },
+  {
     month: "JULY",
     window: "7/10",
     title: "BENCHMARK #2 JUMPS IN MAX NUMBERS",
@@ -137,8 +146,8 @@ const roadmap: RoadmapItem[] = [
   {
     month: "JULY",
     window: "7/9",
-    title: "BENCHMARK #3 TUMBLING SKILL SELECTION",
-    category: "BENCHMARK #3",
+    title: "BENCHMARK #4 TUMBLING SKILL SELECTION",
+    category: "BENCHMARK #4",
     description: "TUMBLING  SKILL SELECTION",
     due: "OUTLINE DUE: 7/9",
     icon: ClipboardCheck,
@@ -146,8 +155,8 @@ const roadmap: RoadmapItem[] = [
   {
     month: "JULY",
     window: "7/13",
-    title: "BENCHMARK #4 TEAM DRILLS",
-    category: "BENCHMARK #4",
+    title: "BENCHMARK #5 TEAM DRILLS",
+    category: "BENCHMARK #5",
     description: "TEAM DRILLS",
     due: "VIDEO DUE  7/13",
     icon: Video,
@@ -163,7 +172,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "AUGUST",
     window: "8/20",
-    title: "BENCHMARK #6 STUNT SEQUENCE",
+    title: "BENCHMARK #7 STUNT SEQUENCE",
     category: "(ELEMENT BY ELEMENT)",
     description: "STUNT SEQUENCE (ELEMENT BY ELEMENT) CREATIVE IN 1-2 ELEMENTS MID CREATIVE ELEMENT FINAL 1-2 ELEMENTS & DISMOUNT",
     due: "VIDEO DUE:8/20",
@@ -172,7 +181,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/13",
-    title: "BENCHMARK #7 INITIAL PYRAMID CONCEPTS",
+    title: "BENCHMARK #8 INITIAL PYRAMID CONCEPTS",
     category: "PYRAMID CHOREO  MONTH",
     description: "INITIAL PYRAMID CONCEPTS",
     due: "VIDEO DUE:10/13",
@@ -181,7 +190,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/15",
-    title: "BENCHMARK #8 FULL OUT",
+    title: "BENCHMARK #9 FULL OUT",
     category: "PYRAMID CHOREO  MONTH",
     description: "FULL OUT (MINUST PYRAMID/DANCE",
     due: "VIDEO DUE:10/15",
@@ -190,7 +199,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/16",
-    title: "BENCHMARK #9 FLYER FLEX MEASURABLE",
+    title: "BENCHMARK #10 FLYER FLEX MEASURABLE",
     category: "PYRAMID CHOREO  MONTH",
     description: "FLYER FLEX MEASURABLE BOBY POSITION COLLAGE INCLUDING: HEEL STRETCH, FRONT STRETCH, BOW & ARROW, ARABESQUE, SCALE & NEEDLE",
     due: "COLLAGE DUE:10/16",
@@ -199,7 +208,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/20",
-    title: "BENCHMARK #10 JUMPS IN MAX #S",
+    title: "BENCHMARK #11 JUMPS IN MAX #S",
     category: "PYRAMID CHOREO  MONTH",
     description: "JUMPS IN MAX #S SINGLE TOE, DOUBLE JUMP SEQUENCE AND ANY JUMP NOT PERFORMED.  IE: LEFT HURDLER OR PIKE (INCLUDING NON-JUMPERS) # 1. VIDEO OF JUMPS PERFORMED #2 INDIVIAL COLLAGE",
     due: "COLLAGE DUE 10/20",
@@ -208,8 +217,8 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "9/24",
-    title: "BENCHMARK #11 FULL STUNT ISOLATION",
-    category: "BENCHMARK #11",
+    title: "BENCHMARK #12 FULL STUNT ISOLATION",
+    category: "BENCHMARK #12",
     description: "FULL STUNT ISOLATION",
     due: "VIDEO DUE:9/24",
     icon: Video,
@@ -217,7 +226,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "OCTOBER",
-    title: "BENCHMARK #12 FLYER BODY POSITION CHECK",
+    title: "BENCHMARK #13 FLYER BODY POSITION CHECK",
     category: "DANCE  CHOREO MONTH",
     description: "FLYER BODY POSITION CHECK",
     icon: ClipboardCheck,
@@ -225,7 +234,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/15",
-    title: "BENCHMARK #13 FULL OUT",
+    title: "BENCHMARK #14 FULL OUT",
     category: "DANCE  CHOREO MONTH",
     description: "FULL OUT FROM THIS POINT FORWARD 2 FULL OUTS PER PRACTICE. NO EXCEPTIONS.",
     due: "VIDEO DUE:10/15",
@@ -234,7 +243,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/23",
-    title: "BENCHMARK #14 1ST HALF OF PYRAMID",
+    title: "BENCHMARK #15 1ST HALF OF PYRAMID",
     category: "DANCE  CHOREO MONTH",
     description: "1ST HALF OF PRAMID    (FULL SPEED) 2ND HALF OF PYRAMID  (FULL SPEED)",
     due: "VIDEO DUE:10/23",
@@ -243,7 +252,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "OCTOBER",
     window: "10/29",
-    title: "BENCHMARK #15 PYRAMID ISOLATION DANCE CHOREO",
+    title: "BENCHMARK #16 PYRAMID ISOLATION DANCE CHOREO",
     category: "Gym rehearsal",
     description: "PYRAMID ISOLATION DANCE CHOREO",
     due: "VIDEO DUE:10/29 10/29/2023",
@@ -252,8 +261,8 @@ const roadmap: RoadmapItem[] = [
   {
     month: "NOVEMBER",
     window: "11/5/2023",
-    title: "BENCHMARK #16 USASF LEGALITY SUBMISSION",
-    category: "BENCHMARK #16",
+    title: "BENCHMARK #17 USASF LEGALITY SUBMISSION",
+    category: "BENCHMARK #17",
     description: "USASF LEGALITY SUBMISSION All building (INLCUDING LIFTS)",
     due: "DUE 11/5/2023",
     icon: ClipboardCheck,
@@ -261,8 +270,8 @@ const roadmap: RoadmapItem[] = [
   {
     month: "NOVEMBER",
     window: "11/5/2023-12/1/2023",
-    title: "BENCHMARK #17 RUBRIC DOUBLE CHECK",
-    category: "BENCHMARK #17",
+    title: "BENCHMARK #18 RUBRIC DOUBLE CHECK",
+    category: "BENCHMARK #18",
     description: "RUBRIC DOUBLE CHECK 1. Fill out the document DUE: 11/5/2023 2. Email the form to our scoring rep DUE: 11/6/2023 3. Post confirmation that you meet #’s DUE: 12/1/2023",
     due: "DUE 11/5/2023-12/1/2023",
     icon: ClipboardCheck,
@@ -270,7 +279,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "NOVEMBER",
     window: "11/12/2023",
-    title: "BENCHMARK #18 GIFT OF THE SEASON TEAM SHOWCASE",
+    title: "BENCHMARK #19 GIFT OF THE SEASON TEAM SHOWCASE",
     category: "FULL OUT",
     description: "GIFT OF THE SEASON TEAM SHOWCASE FULL OUT 21 days left of training #Prodigy elevate",
     due: "11/12/2023",
@@ -279,7 +288,7 @@ const roadmap: RoadmapItem[] = [
   {
     month: "DECEMBER",
     window: "12/2",
-    title: "BENCHMARK #19 PHYSICAL FITNESS TEST",
+    title: "BENCHMARK #20 PHYSICAL FITNESS TEST",
     category: "DECEMBER",
     description: "PHYSICAL FITNESS TEST 1. 2 Rounds of the warm-up 2. Stretch system/flyer stretch",
     due: "VIDEO DUE: PRIOR TO LEAVING FOR BREAK 12/2",
