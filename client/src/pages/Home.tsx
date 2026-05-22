@@ -74,6 +74,15 @@ const roadmap: RoadmapItem[] = [
   },
   {
     month: "JUNE",
+    window: "6/1",
+    title: "JUMP BENCHMARK",
+    category: "BENCHMARK",
+    description: "BASELINE JUMP BENCHMARK — MEASURES INDIVIDUAL JUMP IMPROVEMENT THROUGHOUT THE SEASON",
+    note: "DELIVERABLES: (1) VIDEO OF THE WHOLE TEAM PERFORMING JUMPS · (2) INDIVIDUAL TOE TOUCH COLLAGE OF EVERY ATHLETE RANKED FROM BEST TO WORST",
+    icon: Video,
+  },
+  {
+    month: "JUNE",
     window: "6/3",
     title: "LATE TRYOUTS",
     category: "2ND TRYOUT 6/3",
