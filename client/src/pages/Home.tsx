@@ -34,6 +34,7 @@ type RoadmapItem = {
   category: string;
   description: string;
   due?: string;
+  note?: string;
   competitionLogo?: string;
   icon: typeof Flag;
 };
@@ -93,23 +94,17 @@ const roadmap: RoadmapItem[] = [
     title: "LEVEL 1-4 STUNT CAMP",
     category: "JUNE",
     description: "LEVEL 1-4 STUNT CAMP",
+    note: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSITION",
     icon: ShieldCheck,
   },
   {
     month: "JUNE",
     window: "6/24-6/26",
-    title: "LEVEL 5-6 STUNT CAMP.",
+    title: "LEVEL 5-6 STUNT CAMP",
     category: "JUNE",
-    description: "LEVEL 5-6 STUNT CAMP.",
+    description: "LEVEL 5-6 STUNT CAMP",
+    note: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSITION",
     icon: ShieldCheck,
-  },
-  {
-    month: "JUNE",
-    window: "JUNE",
-    title: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSTION",
-    category: "JUNE",
-    description: "TEAMS NEED TO LEAVE WITH MINIMUM A CREATIVE ENTRY 1-2 ELEMENTS AND A CREATIVE TRANSTION",
-    icon: ClipboardCheck,
   },
   {
     month: "JUNE",
@@ -584,6 +579,11 @@ function RoadmapCard({ item, index, Icon, cardId }: { item: RoadmapItem; index: 
         <span className="road-pill blue">{item.category}</span>
       </div>
       <p className="mt-5 text-base leading-7 text-slate-300">{item.description}</p>
+      {item.note && (
+        <p className="mt-4 rounded border border-blue-400/30 bg-blue-900/20 px-4 py-3 font-heading text-xs uppercase tracking-[0.18em] text-blue-200">
+          {item.note}
+        </p>
+      )}
       {item.due && <p className="mt-5 border-l-2 border-blue-300 pl-4 font-heading text-sm uppercase tracking-[0.16em] text-blue-100">{item.due}</p>}
     </div>
   );
