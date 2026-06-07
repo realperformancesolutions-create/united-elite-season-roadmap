@@ -100,3 +100,14 @@
 - [x] Verify the page remains mobile friendly on a small viewport, including hero buttons, roadmap cards, and competition logos.
 - [x] Build and verify that the button lands on the matching benchmark card.
 - [x] Commit, push, and save a checkpoint for the targeted navigation and mobile fix.
+
+## CFA Season Roadmap Version
+
+- [x] Restore United Elite Home.tsx and App.tsx from git after template upgrade damage
+- [x] Upload CFA logo image to webdev storage
+- [x] Write CFA Home.tsx with all CFA benchmark content (May/June/July)
+- [x] Apply CFA red/white/blue color scheme to index.css
+- [x] Update App.tsx with dark theme for CFA
+- [x] Update index.html with CFA title and meta description
+- [x] Build passes successfully (pnpm build)
+- [x] Save checkpoint for CFA roadmap

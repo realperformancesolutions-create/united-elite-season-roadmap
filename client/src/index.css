@@ -1,5 +1,6 @@
 /*
-Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The global visual system must feel like a disciplined competition-night route: black asphalt depth, electric United blue signal light, metallic silver trim, sharp typography, and controlled athletic motion.
+Design philosophy reminder for this file: Neo-Futurist Sports Cartography -- CFA Edition.
+Red/white/blue patriotic scheme: deep navy-black background, CFA red signal light, white trim.
 */
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -51,38 +52,38 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
 :root,
 .dark {
   --radius: 0.15rem;
-  --background: oklch(0.145 0.026 250);
+  --background: oklch(0.12 0.022 280);
   --foreground: oklch(0.96 0.01 250);
-  --card: oklch(0.18 0.028 250 / 0.88);
+  --card: oklch(0.16 0.024 280 / 0.88);
   --card-foreground: oklch(0.96 0.01 250);
-  --popover: oklch(0.16 0.028 250);
+  --popover: oklch(0.14 0.024 280);
   --popover-foreground: oklch(0.96 0.01 250);
-  --primary: oklch(0.72 0.18 247);
-  --primary-foreground: oklch(0.13 0.02 250);
-  --secondary: oklch(0.23 0.045 250);
+  --primary: oklch(0.58 0.22 27);
+  --primary-foreground: oklch(0.98 0.01 0);
+  --secondary: oklch(0.22 0.04 280);
   --secondary-foreground: oklch(0.92 0.03 245);
-  --muted: oklch(0.24 0.025 250);
-  --muted-foreground: oklch(0.74 0.032 248);
-  --accent: oklch(0.67 0.19 250);
-  --accent-foreground: oklch(0.98 0.01 250);
+  --muted: oklch(0.22 0.022 280);
+  --muted-foreground: oklch(0.72 0.03 248);
+  --accent: oklch(0.55 0.22 27);
+  --accent-foreground: oklch(0.98 0.01 0);
   --destructive: oklch(0.62 0.22 28);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.62 0.12 247 / 0.22);
-  --input: oklch(0.64 0.14 247 / 0.18);
-  --ring: oklch(0.74 0.16 247);
-  --chart-1: oklch(0.76 0.15 247);
-  --chart-2: oklch(0.66 0.18 252);
+  --border: oklch(0.55 0.18 27 / 0.22);
+  --input: oklch(0.55 0.18 27 / 0.18);
+  --ring: oklch(0.62 0.22 27);
+  --chart-1: oklch(0.62 0.22 27);
+  --chart-2: oklch(0.52 0.19 30);
   --chart-3: oklch(0.88 0.02 245);
-  --chart-4: oklch(0.54 0.13 248);
-  --chart-5: oklch(0.36 0.07 250);
-  --sidebar: oklch(0.15 0.026 250);
+  --chart-4: oklch(0.42 0.14 28);
+  --chart-5: oklch(0.32 0.07 280);
+  --sidebar: oklch(0.13 0.022 280);
   --sidebar-foreground: oklch(0.95 0.01 250);
-  --sidebar-primary: oklch(0.7 0.18 247);
-  --sidebar-primary-foreground: oklch(0.13 0.02 250);
-  --sidebar-accent: oklch(0.23 0.045 250);
+  --sidebar-primary: oklch(0.58 0.22 27);
+  --sidebar-primary-foreground: oklch(0.98 0.01 0);
+  --sidebar-accent: oklch(0.22 0.04 280);
   --sidebar-accent-foreground: oklch(0.95 0.01 250);
-  --sidebar-border: oklch(0.62 0.12 247 / 0.22);
-  --sidebar-ring: oklch(0.74 0.16 247);
+  --sidebar-border: oklch(0.55 0.18 27 / 0.22);
+  --sidebar-ring: oklch(0.62 0.22 27);
 }
 
 @layer base {
@@ -92,7 +93,7 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
 
   html {
     scroll-behavior: smooth;
-    background: #03070d;
+    background: #080510;
   }
 
   body {
@@ -102,7 +103,7 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
   }
 
   ::selection {
-    background: rgba(79, 171, 255, 0.35);
+    background: rgba(220, 38, 38, 0.35);
     color: white;
   }
 
@@ -141,15 +142,15 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     mask-image: linear-gradient(to bottom, black, transparent 88%);
   }
 
-  .text-shadow-blue {
-    text-shadow: 0 0 34px rgba(63, 158, 255, 0.46), 0 8px 42px rgba(0, 0, 0, 0.78);
+  .text-shadow-red {
+    text-shadow: 0 0 34px rgba(220, 38, 38, 0.46), 0 8px 42px rgba(0, 0, 0, 0.78);
   }
 
   .bevel-panel {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(9, 17, 29, 0.92), rgba(10, 31, 55, 0.58));
-    border: 1px solid rgba(136, 202, 255, 0.18);
+    background: linear-gradient(135deg, rgba(17, 9, 9, 0.92), rgba(55, 10, 10, 0.58));
+    border: 1px solid rgba(255, 136, 136, 0.18);
     clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 24px 100%, 0 calc(100% - 24px));
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 16px 46px rgba(0,0,0,0.28);
   }
@@ -161,7 +162,7 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent 18%, transparent 72%, rgba(70,166,255,0.14));
+    background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent 18%, transparent 72%, rgba(220,38,38,0.14));
     opacity: 0.68;
   }
 
@@ -170,9 +171,9 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     overflow: hidden;
     padding: clamp(1.25rem, 3vw, 2rem);
     background:
-      linear-gradient(135deg, rgba(9, 16, 27, 0.95), rgba(12, 31, 54, 0.82)),
-      radial-gradient(circle at 14% 0%, rgba(66, 161, 255, 0.22), transparent 30%);
-    border: 1px solid rgba(132, 202, 255, 0.22);
+      linear-gradient(135deg, rgba(16, 8, 8, 0.95), rgba(40, 8, 8, 0.82)),
+      radial-gradient(circle at 14% 0%, rgba(220, 38, 38, 0.22), transparent 30%);
+    border: 1px solid rgba(220, 120, 120, 0.22);
     clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 34px 100%, 0 calc(100% - 34px));
     box-shadow: 0 22px 70px rgba(0,0,0,0.38), inset 0 1px 0 rgba(255,255,255,0.08);
     transition: transform 320ms ease, border-color 320ms ease, box-shadow 320ms ease;
@@ -180,8 +181,8 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
 
   .roadmap-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(155, 216, 255, 0.58);
-    box-shadow: 0 32px 90px rgba(0,0,0,0.5), 0 0 34px rgba(43, 151, 255, 0.18), inset 0 1px 0 rgba(255,255,255,0.12);
+    border-color: rgba(255, 160, 160, 0.58);
+    box-shadow: 0 32px 90px rgba(0,0,0,0.5), 0 0 34px rgba(220, 38, 38, 0.18), inset 0 1px 0 rgba(255,255,255,0.12);
   }
 
   .card-icon {
@@ -189,10 +190,10 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     place-items: center;
     width: 2.75rem;
     height: 2.75rem;
-    color: rgb(191 226 255);
-    background: linear-gradient(135deg, rgba(77, 171, 255, 0.22), rgba(255,255,255,0.05));
-    border: 1px solid rgba(141, 207, 255, 0.28);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 0 22px rgba(39,142,255,0.16);
+    color: rgb(255 191 191);
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.22), rgba(255,255,255,0.05));
+    border: 1px solid rgba(220, 100, 100, 0.28);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 0 22px rgba(220,38,38,0.16);
   }
 
   .road-pill {
@@ -207,13 +208,13 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.13em;
-    color: rgb(214 232 247);
+    color: rgb(247 214 214);
   }
 
-  .road-pill.blue {
-    border-color: rgba(91, 184, 255, 0.3);
-    background: rgba(51, 154, 255, 0.13);
-    color: rgb(179 220 255);
+  .road-pill.red {
+    border-color: rgba(220, 38, 38, 0.3);
+    background: rgba(220, 38, 38, 0.13);
+    color: rgb(255 180 180);
   }
 
   .waypoint-marker {
@@ -222,10 +223,10 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     place-items: center;
     width: 4.5rem;
     height: 4.5rem;
-    background: radial-gradient(circle, rgba(82,184,255,0.32) 0%, rgba(37,137,255,0.18) 42%, rgba(5,11,19,0.96) 74%);
-    border: 1px solid rgba(150, 218, 255, 0.46);
+    background: radial-gradient(circle, rgba(220,38,38,0.32) 0%, rgba(180,20,20,0.18) 42%, rgba(8,5,16,0.96) 74%);
+    border: 1px solid rgba(220, 100, 100, 0.46);
     border-radius: 999px;
-    box-shadow: 0 0 42px rgba(53, 161, 255, 0.38), inset 0 1px 0 rgba(255,255,255,0.18);
+    box-shadow: 0 0 42px rgba(220, 38, 38, 0.38), inset 0 1px 0 rgba(255,255,255,0.18);
   }
 
   .waypoint-marker::after {
@@ -241,8 +242,8 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
     overflow: hidden;
     min-height: 13rem;
     padding: 1.45rem;
-    background: linear-gradient(135deg, rgba(10, 18, 31, 0.96), rgba(11, 42, 76, 0.64));
-    border: 1px solid rgba(134, 207, 255, 0.18);
+    background: linear-gradient(135deg, rgba(18, 8, 8, 0.96), rgba(55, 10, 10, 0.64));
+    border: 1px solid rgba(220, 100, 100, 0.18);
     clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%);
     box-shadow: 0 22px 58px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.08);
     transition: transform 300ms ease, border-color 300ms ease;
@@ -250,11 +251,11 @@ Design philosophy reminder for this file: Neo-Futurist Sports Cartography. The g
 
   .month-tile:hover {
     transform: translateY(-5px);
-    border-color: rgba(145, 213, 255, 0.46);
+    border-color: rgba(220, 130, 130, 0.46);
   }
 
   .road-shadow {
-    filter: drop-shadow(0 0 22px rgba(46, 151, 255, 0.85));
+    filter: drop-shadow(0 0 22px rgba(220, 38, 38, 0.85));
   }
 
   .road-dash {
